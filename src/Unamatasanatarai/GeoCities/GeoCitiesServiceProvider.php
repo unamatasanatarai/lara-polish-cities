@@ -2,6 +2,8 @@
 
 namespace Unamatasanatarai\GeoCities;
 
+use Illuminate\Support\ServiceProvider;
+
 class GeoCitiesServiceProvider extends ServiceProvider
 {
 
