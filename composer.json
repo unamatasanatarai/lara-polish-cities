@@ -1,0 +1,21 @@
+{
+    "name": "unamatasanatarai/lara-polish-cities",
+    "type": "library",
+    "description": "Database and models for GUS polish cities",
+    "homepage": "https://github.com/unamatasanatarai/lara-polish-cities",
+    "keywords": ["laravel5","cities","polish cities database"],
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Unamata Sanatarai",
+            "email": "unamatasanatarai@gmail.com",
+            "homepage": "https://github.com/unamatasanatarai/",
+            "role": "Main Developer"
+        }
+    ],
+    "autoload": {
+        "psr-4": {
+            "Unamatasanatarai\\GeoCities\\": "src/Unamatasanatarai/GeoCities"
+        }
+    }
+}
