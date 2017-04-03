@@ -13,4 +13,30 @@ class GeoProvince extends Model
         'name',
     ];
 
+    public function cities()
+    {
+        return $this->hasMany(
+            GeoCity::class,
+            'gov_province_id',
+            'gov_id'
+        );
+    }
+
+    public function communities()
+    {
+        return $this->hasMany(
+            GeoCommunity::class,
+            'gov_province_id',
+            'gov_id'
+        );
+    }
+
+    public function counties()
+    {
+        return $this->hasMany(
+            GeoCounty::class,
+            'gov_province_id',
+            'gov_id'
+        );
+    }
 }

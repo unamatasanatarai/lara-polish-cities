@@ -1,4 +1,5 @@
 <?php
+
 namespace Unamatasanatarai\GeoCities\Commands;
 
 use DB;
@@ -6,6 +7,7 @@ use Illuminate\Console\Command;
 
 class SeedGeoCitiesCommand extends Command
 {
+
     protected $signature = 'geocities:seed';
 
     protected $description = 'Seed the database';
@@ -57,6 +59,7 @@ class SeedGeoCitiesCommand extends Command
         $bar->setFormat(" %current%/%max% [%bar%] %percent:3s%% %elapsed:6s%/%estimated:-6s% %memory:6s% %message%");
         $bar->setMessage('...wait');
         $bar->start();
+
         return $bar;
     }
 }
